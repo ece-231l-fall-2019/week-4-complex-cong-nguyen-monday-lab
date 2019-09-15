@@ -1,6 +1,6 @@
 # Tasks for this project
-- [ ] Complete part 1 in personal week 3 repository (@cnguyen1209)
-- [ ] Complete part 1 in personal week 3 repository (@SteelMatrix)
+- [ ] Complete part 1 in personal week 3 repository ( @cnguyen1209 )
+- [ ] Complete part 1 in personal week 3 repository ( @SteelMatrix )
 
 - [ ] Implement Complex Number class
   - Implement the following functions:
