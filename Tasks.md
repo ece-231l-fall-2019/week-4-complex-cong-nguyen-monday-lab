@@ -4,7 +4,10 @@
 
 - [ ] Implement Complex Number class
   - Implement the following functions:
-    - *Tasks will be added soon*
+    - [ ] Add
+    - [ ] Subtract
+    - [ ] Multiply
+    - [ ] Divide
 - [ ] Test values
   - [ ] Create an array of Real Components of the complex numbers
   - [ ] Create an array of Imaginary Components of the complex numbers
