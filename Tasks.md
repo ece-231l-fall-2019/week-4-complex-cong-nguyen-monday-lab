@@ -4,6 +4,14 @@
 
 - [ ] Implement Complex Number class
   - Implement the following functions:
+    1. Comparison
+      - [ ] >
+      - [ ] <
+      - [ ] ==
+      - [ ] <=
+      - [ ] >=
+      - [ ] !=
+    2. Arithmetic
     - [ ] Add
     - [ ] Subtract
     - [ ] Multiply
