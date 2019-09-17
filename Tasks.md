@@ -4,8 +4,25 @@
 
 - [ ] Implement Complex Number class
   - Implement the following functions:
-    - *Tasks will be added soon*
-- [ ] Test values
+    1. Comparison (Divided Work)
+        - [ ] >
+        - [ ] <
+        - [ ] ==
+        - [ ] <=
+        - [ ] >=
+        - [ ] !=
+    2. Arithmetic ( @SteelMatrix )
+        - [ ] Add
+        - [ ] Subtract
+        - [ ] Multiply
+        - [ ] Divide
+    3. Assignment ( @cnguyen1209 )
+        - [ ] =
+        - [ ] +=
+        - [ ] -=
+        - [ ] *=
+        - [ ] /=
+- [ ] Test values (Divided Work)
   - [ ] Create an array of Real Components of the complex numbers
   - [ ] Create an array of Imaginary Components of the complex numbers
   - [ ] Ensure by hand that the values obtained are correct
