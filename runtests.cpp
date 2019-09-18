@@ -22,10 +22,15 @@ int main()
 {
 	Complex z1(4, 3);
 	Complex z2(2, 5);
-	Complex ans(6, 8);
+	Complex ans1(6, 8);
+	Complex ans2(2, -2);
+	Complex ans3(-7, 26);
+
 	Assert(z1.real() == 4, "real constructor");
 	Assert(z1.imag() == 3, "real constructor");
-	Assert(z1 + z2 == ans, "real constructor");
+	Assert(z1 + z2 == ans1, "real constructor");
+	Assert(z1 - z2 == ans2, "real constructor");
+	Assert(z1 * z2 == ans3, "real constructor");
 	//Commented out for now
 	//Assert(norm(z1) == 25, "complex norm");
 
