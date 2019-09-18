@@ -23,7 +23,7 @@ double Complex::real() const
 {
 	Complex tmp;
 	tmp._real = _real;
-	return tmp._real;
+	return _real;
 }
 
 double Complex::imag() const
@@ -31,4 +31,15 @@ double Complex::imag() const
 	Complex tmp;
 	tmp._imag = _imag;
 	return _imag;
+}
+
+Complex operator+(const Complex& a, const Complex& b)
+{
+	Complex ans(a.real() + b.real(), a.imag() + b.imag());
+	return ans;
+}
+
+bool operator==(const Complex& a, const Complex& b)
+{
+	return a.real() == b.real() && a.imag() == b.imag();
 }

@@ -21,8 +21,11 @@ void Assert(bool cond, std::string message)
 int main()
 {
 	Complex z1(4, 3);
+	Complex z2(2, 5);
+	Complex ans(6, 8);
 	Assert(z1.real() == 4, "real constructor");
 	Assert(z1.imag() == 3, "real constructor");
+	Assert(z1 + z2 == ans, "real constructor");
 	//Commented out for now
 	//Assert(norm(z1) == 25, "complex norm");
 
