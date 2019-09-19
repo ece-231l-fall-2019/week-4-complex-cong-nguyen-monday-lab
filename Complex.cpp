@@ -1,6 +1,4 @@
 #include "Complex.h"
-//There are 2 issues somewhere in this code. When you find them,
-//create an issue on GitHub for each
 Complex::Complex()
 {
 	_real = 0.0;
@@ -30,29 +28,39 @@ double Complex::imag() const
 	return _imag;
 }
 
+Complex conj(const Complex& z)
+{
+	Complex ans (z.real(), -z.imag());
+	return ans;
+}
+
 Complex operator+(const Complex& a, const Complex& b)
 {
 	Complex ans(a.real() + b.real(), a.imag() + b.imag());
 	return ans;
 }
 
-Complex operator-(const Complex a, const Complex& b)
+Complex operator-(const Complex& a, const Complex& b)
 {
 	Complex ans(a.real() - b.real(), a.imag() - b.imag());
 	return ans;
 }
 
-Complex operator*(const Complex& a, Complex& b)
+Complex operator*(const Complex& a, const Complex& b)
 {
-	//Using the model (a+bi)(c+di)
-	int firsts = a.real() * b.real(); //Real components (a * c)
-	int lasts = a.imag() * b.imag(); // Imaginary components (bi * di)
-	int inners = a.imag() * b.real(); //First imaginary with second real (bi * c)
-	int outers = a.real() * b.imag(); // Second imaginary with first real (a * di)
+	int real = (a.real() * b.real()) - (a.imag() * b.imag()); // Real component (subtracted because i^2 = -1)
+	int imag = (a.imag() * b.real()) + (a.real() * b.imag()); // Imaginary component
 
-	int real = firsts - lasts; // Real component (subtracted because i^2 = -1)
-	int imag = inners + outers; // Imaginary component
+	Complex ans(real, imag);
+	return ans;
+}
 
+Complex operator/(const Complex& a, const Complex& b)
+{
+	Complex numerator = (a * conj(b));
+	int denominator = (b.real() * b.real()) + (b.imag() * b.imag());
+	int real = numerator.real() / denominator;
+	int imag = numerator.imag() / denominator;
 	Complex ans(real, imag);
 	return ans;
 }
