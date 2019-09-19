@@ -7,7 +7,7 @@
     1. Comparison (Divided Work)
         - [ ] >
         - [ ] <
-        - [x] ==
+        - [x] == ( @SteelMatrix )
         - [ ] <=
         - [ ] >=
         - [ ] !=
@@ -15,7 +15,7 @@
         - [x] Add
         - [x] Subtract
         - [x] Multiply
-        - [ ] Divide
+        - [x] Divide
     3. Assignment ( @cnguyen1209 )
         - [ ] =
         - [ ] +=
