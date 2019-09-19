@@ -23,7 +23,5 @@
         - [ ] *=
         - [ ] /=
 - [ ] Test values (Divided Work)
-  - [ ] Create an array of Real Components of the complex numbers
-  - [ ] Create an array of Imaginary Components of the complex numbers
-  - [ ] Ensure by hand that the values obtained are correct
-  - [ ] Use a "for" loop to automate the value testing
+  - [ ] Calculate the arithmetic answers and place them in the file for testing
+  - [ ] Create an assess function for each case, and verify that each case passes
