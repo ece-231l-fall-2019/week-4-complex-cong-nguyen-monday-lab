@@ -31,7 +31,7 @@
         - [x] imag()
     8. [x] Output ( @SteelMatrix )
         - [x] operator <<
-        
+- [ ] Merge all changes in a pull request
 - [ ] Test values (Divided Work)
   - [ ] Write unit tests for functions that partner worked on
   
