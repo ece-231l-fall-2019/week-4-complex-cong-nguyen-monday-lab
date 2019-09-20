@@ -29,8 +29,8 @@
     7. [x] Access Values ( @SteelMatrix )
         - [x] real()
         - [x] imag()
-    8. [ ] Output ( @SteelMatrix )
-        - [ ] operator <<
+    8. [x] Output ( @SteelMatrix )
+        - [x] operator <<
         
 - [ ] Test values (Divided Work)
   - [ ] Write unit tests for functions that partner worked on
