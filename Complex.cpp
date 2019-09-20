@@ -69,3 +69,12 @@ bool operator==(const Complex& a, const Complex& b)
 {
 	return a.real() == b.real() && a.imag() == b.imag();
 }
+
+std::ostream& operator<<(std::ostream& out, const Complex& z)
+{
+	if(z.imag() >= 0)
+		out << z.real() << "+" << z.imag() << "i";
+	else
+		out << z.real() << z.imag() << "i";
+	return out;
+}
