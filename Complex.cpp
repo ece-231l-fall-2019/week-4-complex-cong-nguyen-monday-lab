@@ -32,3 +32,71 @@ double Complex::imag() const
 	tmp._imag = _imag;
 	return _imag;
 }
+
+Complex::Complex operator=(double r)
+{
+}
+
+Complex::Complex operator=(const Complex& z)
+{
+}
+
+Complex::Complex operator+=(const Complex& z)
+{
+}
+
+Complex::Complex operator-=(const Complex& z)
+{
+}
+
+Complex::Complex operator*=(const Complex& z)
+{
+}
+
+Complex::Complex operator/=(const Complex& z)
+{
+}
+
+Complex norm(const Complex& z)
+{
+}
+
+Complex conj(const Complex& z)
+{
+}
+
+Complex operator+(const Complex& a, const Complex& b)
+{
+}
+
+Complex operator-(const Complex& a, const Complex& b)
+{
+}
+
+Complex operator*(const Complex& a, const Complex& b)
+{
+}
+
+Complex operator/(const Complex& a, const Complex& b)
+{
+}
+
+bool operator==(const Complex& a, const Complex& b)
+{
+}
+
+bool operator==(const Complex& a, double r)
+{
+}
+
+bool operator!=(const Complex& a, const Complex& b)
+{
+}
+
+bool operator!=(const Complex& a, double r)
+{
+}
+
+std::ostream& operator<<(std::ostream& out, const Complex& z)
+{
+}
