@@ -5,12 +5,10 @@
 - [ ] Implement Complex Number class
   - Implement the following functions:
     1. Comparison (Divided Work)
-        - [ ] >
-        - [ ] <
         - [x] == ( @SteelMatrix )
-        - [ ] <=
-        - [ ] >=
-        - [ ] !=
+        - [x] == r ( @cnguyen1209 )
+        - [x] != 2 vector ( @cnguyen1209 )
+        - [x] != vector and r ( @cnguyen1209 )
     2. Arithmetic ( @SteelMatrix )
         - [x] Add
         - [x] Subtract
