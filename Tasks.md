@@ -17,11 +17,11 @@
         - [x] Multiply
         - [x] Divide
     3. Assignment ( @cnguyen1209 )
-        - [ ] =
-        - [ ] +=
-        - [ ] -=
-        - [ ] *=
-        - [ ] /=
+        - [x] =
+        - [x] +=
+        - [x] -=
+        - [x] *=
+        - [x] /=
 - [ ] Test values (Divided Work)
   - [ ] Calculate the arithmetic answers and place them in the file for testing
   - [ ] Create an assess function for each case, and verify that each case passes
