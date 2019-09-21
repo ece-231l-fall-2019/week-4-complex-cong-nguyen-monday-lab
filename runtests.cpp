@@ -23,10 +23,26 @@ int main()
 {
 	Complex z1(4, 3);
 	Complex z2(2, 5);
+
+	//Comparison (necessary for everything else)
 	Assert(norm(z1) == 25, "real constructor");
 	Assert(z1 == 4, "real constructor");
 	Assert(z1 != z2, "real constructor");
 	Assert(z1 != 5, "real constructor");
+
+	//Assignment
+	double eqOpTest = 8;
+	Complex eqOpTest2(16, 23);
+
+	Complex AssnTest1(8, 0);
+	Complex AssnTest2(16, 23);
+	Complex z3(0, 0);
+	z3 = eqOpTest;
+	Complex z4(0, 0);
+	z4 = eqOpTest2;
+
+	Assert(z3 == AssnTest1, "real constructor");
+	Assert(z4 == AssnTest2, "real constructor");
 
 	// TODO:
 	// Write *at least* 20 more tests to fully test
