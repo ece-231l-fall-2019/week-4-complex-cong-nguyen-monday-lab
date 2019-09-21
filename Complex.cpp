@@ -1,5 +1,4 @@
 #include "Complex.h"
-
 Complex::Complex()
 {
 	_real = 0.0;
@@ -21,18 +20,19 @@ Complex::Complex(const Complex& z)
 
 double Complex::real() const
 {
-	Complex tmp;
-	tmp._real = _real;
-	return tmp._real;
+	return _real;
 }
 
 double Complex::imag() const
 {
-	Complex tmp;
-	tmp._imag = _imag;
 	return _imag;
 }
 
+Complex conj(const Complex& z)
+{
+	Complex ans (z.real(), -z.imag());
+	return ans;
+}
 Complex::Complex operator=(double r)
 {
 }
@@ -61,28 +61,41 @@ Complex norm(const Complex& z)
 {
 }
 
-Complex conj(const Complex& z)
-{
-}
 
 Complex operator+(const Complex& a, const Complex& b)
 {
+	Complex ans(a.real() + b.real(), a.imag() + b.imag());
+	return ans;
 }
 
 Complex operator-(const Complex& a, const Complex& b)
 {
+	Complex ans(a.real() - b.real(), a.imag() - b.imag());
+	return ans;
 }
 
 Complex operator*(const Complex& a, const Complex& b)
 {
+	int real = (a.real() * b.real()) - (a.imag() * b.imag()); // Real component (subtracted because i^2 = -1)
+	int imag = (a.imag() * b.real()) + (a.real() * b.imag()); // Imaginary component
+
+	Complex ans(real, imag);
+	return ans;
 }
 
 Complex operator/(const Complex& a, const Complex& b)
 {
+	Complex numerator = (a * conj(b));
+	int denominator = (b.real() * b.real()) + (b.imag() * b.imag());
+	int real = numerator.real() / denominator;
+	int imag = numerator.imag() / denominator;
+	Complex ans(real, imag);
+	return ans;
 }
 
 bool operator==(const Complex& a, const Complex& b)
 {
+	return a.real() == b.real() && a.imag() == b.imag();
 }
 
 bool operator==(const Complex& a, double r)
@@ -99,4 +112,9 @@ bool operator!=(const Complex& a, double r)
 
 std::ostream& operator<<(std::ostream& out, const Complex& z)
 {
+	if(z.imag() >= 0)
+		out << z.real() << "+" << z.imag() << "i";
+	else
+		out << z.real() << z.imag() << "i";
+	return out;
 }
