@@ -35,7 +35,7 @@ int main()
 	Complex eqOpTest2(16, 23);
 
 	Complex AssnTest1(8, 0);
-	Complex AssnTest2(16, 23);
+	Complex AssnTest2(16, 22);
 	Complex z3(0, 0);
 	z3 = eqOpTest;
 	Complex z4(0, 0);
@@ -43,6 +43,16 @@ int main()
 
 	Assert(z3 == AssnTest1, "real constructor");
 	Assert(z4 == AssnTest2, "real constructor");
+
+	z3 += Complex(1, 1);
+	Assert(z3 == Complex(9, 1), "real constructor");
+	z3 *= Complex (2, 2);
+	Assert(z3 == Complex(16, 20), "real constructor");
+
+	z4 -= Complex(1, 1);
+	Assert(z4 == Complex(15, 21), "real constructor");
+	z4 /= Complex(3, 3);
+	Assert(z4 == Complex(6, 1), "real constructor");
 
 	// TODO:
 	// Write *at least* 20 more tests to fully test
