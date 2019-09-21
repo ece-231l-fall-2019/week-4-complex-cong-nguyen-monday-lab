@@ -69,9 +69,15 @@ Complex& Complex::operator/=(const Complex& z)
 double norm(const Complex& z)
 {
 	double nor;
-	nor = z.real()*z.real() + z.img()*z.img()
+	nor = z.real()*z.real() + z.imag()*z.imag()
 	return nor;
 }
+// conj returns the complex conjugate of z
+Complex conj(const Complex& z)
+{
+
+}
+
 // Comparison
 bool operator==(const Complex& a, const Complex& b)
 {
@@ -79,13 +85,13 @@ bool operator==(const Complex& a, const Complex& b)
 }
 bool operator==(const Complex& a, double r)
 {
-	return (a.real() == r) && (a.img() == 0);
+	return (a.real() == r) && (a.imag() == 0);
 }
 bool operator!=(const Complex& a, const Complex& b)
 {
-	return (a.real() != b.real()) || (a.img() != b.img());
+	return (a.real() != b.real()) || (a.imag() != b.imag());
 }
 bool operator!=(const Complex& a, double r)
 {
-	return (a.real() != r) || (a.img() != 0);
+	return (a.real() != r) || (a.imag() != 0);
 }
