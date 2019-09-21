@@ -33,7 +33,7 @@
         - [x] operator <<
 - [x] Merge all changes in a pull request
 - [ ] Test values (Divided Work)
-  - [ ] Write unit tests for functions that partner worked on ( @SteelMatrix )
+  - [x] Write unit tests for functions that partner worked on ( @SteelMatrix )
   - [ ] Write unit tests for functions that partner worked on ( @cnguyen1209 )
   
 - [ ] Email the professor to let him know we're finished
