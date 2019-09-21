@@ -28,6 +28,10 @@ double Complex::imag() const
 	return _imag;
 }
 
+double norm(const Complex& z)
+{
+}
+
 Complex conj(const Complex& z)
 {
 	Complex ans (z.real(), -z.imag());
