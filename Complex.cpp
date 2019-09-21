@@ -67,20 +67,12 @@ Complex& Complex::operator/=(const Complex& z)
 	return *this;
 }
 
-// norm returns the squared magnitude of z
 double norm(const Complex& z)
 {
 	double nor;
-	nor = z.real()*z.real() + z.imag()*z.imag()
+	nor = z.real()*z.real() + z.imag()*z.imag();
 	return nor;
 }
-// conj returns the complex conjugate of z
-Complex conj(const Complex& z)
-{
-
-}
-
-// Comparison
 
 Complex conj(const Complex& z)
 {
