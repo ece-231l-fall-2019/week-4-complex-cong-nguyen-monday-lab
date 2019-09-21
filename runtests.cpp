@@ -22,22 +22,11 @@ void Assert(bool cond, std::string message)
 int main()
 {
 	Complex z1(4, 3);
-
-	Assert(z1.real() == 4, "real constructor");
-	Assert(z1.imag() == 3, "real constructor");
 	Complex z2(2, 5);
-	Complex ans1(6, 8); //Addition
-	Complex ans2(2, -2); //Subtraction
-	Complex ans3(-7, 26); //Multiplication
-	Complex ans4(0.79, -0.48); //Division
-	Assert(z1.real() == 4, "real constructor");
-	Assert(z1.imag() == 3, "real constructor");
-	Assert(z1 + z2 == ans1, "real constructor");
-	Assert(z1 - z2 == ans2, "real constructor");
-	Assert(z1 * z2 == ans3, "real constructor");
-	Assert(z1 / z2 == ans4, "real constructor");
-	Assert(norm(z1) == 25, "complex norm");
-
+	Assert(norm(z1) == 25, "real constructor");
+	Assert(z1 == 4, "real constructor");
+	Assert(z1 != z2, "real constructor");
+	Assert(z1 != 5, "real constructor");
 
 	// TODO:
 	// Write *at least* 20 more tests to fully test

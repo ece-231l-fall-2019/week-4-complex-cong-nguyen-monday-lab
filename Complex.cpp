@@ -75,7 +75,6 @@ double norm(const Complex& z)
 	return nor;
 }
 // Comparison
-=======
 
 Complex conj(const Complex& z)
 {
