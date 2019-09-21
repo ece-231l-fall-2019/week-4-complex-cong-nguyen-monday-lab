@@ -8,7 +8,7 @@ class Complex
 	private:
 		double _real; // stores the real component
 		double _imag; // stores the imaginary component
-	
+
 	public:
 
 	// Constructors
