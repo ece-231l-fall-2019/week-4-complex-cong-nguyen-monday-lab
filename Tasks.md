@@ -31,8 +31,9 @@
         - [x] imag()
     8. [x] Output ( @SteelMatrix )
         - [x] operator <<
-- [ ] Merge all changes in a pull request
+- [x] Merge all changes in a pull request
 - [ ] Test values (Divided Work)
-  - [ ] Write unit tests for functions that partner worked on
+  - [ ] Write unit tests for functions that partner worked on ( @SteelMatrix )
+  - [ ] Write unit tests for functions that partner worked on ( @cnguyen1209 )
   
 - [ ] Email the professor to let him know we're finished
