@@ -106,10 +106,11 @@ Complex operator*(const Complex& a, const Complex& b)
 }
 Complex operator/(const Complex& a, const Complex& b)
 {
-	Complex numerator = (a * conj(b));
-	int denominator = (b.real() * b.real()) + (b.imag() * b.imag());
-	int real = numerator.real() / denominator;
-	int imag = numerator.imag() / denominator;
+	double numReal = (a.real() * b.real()) - (a.imag() * -b.imag());
+	double numImag = (a.imag() * b.real()) + (a.real() * -b.imag());
+	double denominator = (b.real() * b.real()) + (b.imag() * b.imag());
+	double real = numReal / denominator;
+	double imag = numImag / denominator;
 	Complex ans(real, imag);
 	return ans;
 }

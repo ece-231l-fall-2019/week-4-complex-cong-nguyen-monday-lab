@@ -51,11 +51,13 @@ int main()
 
 	z5_1 += Complex(1, 1);
 	Assert(z5_1 == Complex(9, 1), "Assignment Test, +=");				//8
-	z5_1 *= z5_1;
-	Assert(z5_1 == Complex(80, 18), "Assignment Test, *=");				//9
+
+	z5_1 *= Complex(2, 2);
+	Assert(z5_1 == Complex(16, 20), "Assignment Test, *=");				//9
 
 	z5_1 /= Complex(2, 2);
 	Assert(z5_1 == Complex(9, 1), "Assignment Test, /=");				//10
+
 	z5_1 -= Complex(1, 1);
 	Assert(z5_1 == Complex(8, 0), "Assignment Test, -=");				//11
 
@@ -75,21 +77,17 @@ int main()
 	Complex z25(1,1);
 	z25 *= z5;
 	std::cout << z25 << std::endl;
-	//Test Comparsion == @SteelMatrix has done the Comparisons already
-	Assert(z5 != z6, "Test comparison =="); //9
-	Assert(z7 == z9, "Test comparison =="); //10
-  
+
 	//Test basic math operations
 	Assert(z5 + z6 == ans5, "Test basic math +"); 					//12
 	Assert(z6 - z10 == ans6, "Test basic math -"); 					//13
 	Assert(z6 * z7 == ans7, "Test basic math *"); 					//14
-	Assert(z5 * z10 == ans7, "Test basic math *"); //14 (Already done above)
 
 	Complex ans9;
 	ans9 = z12 / z10;
 	std::cout << ans9 << std::endl;
 
-	Assert(z12 / z10 == ans8, "Test basic math /"); //15
+	Assert(z12 / z10 == ans8, "Test basic math /"); 				//15
 	Complex num(6, 3);
 	Complex den(0, 5);
 	Complex ans(0.6, -1.2);
