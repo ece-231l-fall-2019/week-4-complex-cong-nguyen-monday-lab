@@ -67,31 +67,31 @@ Complex& Complex::operator/=(const Complex& z)
 	return *this;
 }
 
+// squared magnitude of z
 double norm(const Complex& z)
 {
 	double nor;
 	nor = z.real()*z.real() + z.imag()*z.imag();
 	return nor;
 }
-
+// complex conjugate of z
 Complex conj(const Complex& z)
 {
 	Complex ans (z.real(), -z.imag());
 	return ans;
 }
 
+// basic math operations
 Complex operator+(const Complex& a, const Complex& b)
 {
 	Complex ans(a.real() + b.real(), a.imag() + b.imag());
 	return ans;
 }
-
 Complex operator-(const Complex& a, const Complex& b)
 {
 	Complex ans(a.real() - b.real(), a.imag() - b.imag());
 	return ans;
 }
-
 Complex operator*(const Complex& a, const Complex& b)
 {
 	int real = (a.real() * b.real()) - (a.imag() * b.imag()); // Real component (subtracted because i^2 = -1)
@@ -100,7 +100,6 @@ Complex operator*(const Complex& a, const Complex& b)
 	Complex ans(real, imag);
 	return ans;
 }
-
 Complex operator/(const Complex& a, const Complex& b)
 {
 	Complex numerator = (a * conj(b));
@@ -111,12 +110,11 @@ Complex operator/(const Complex& a, const Complex& b)
 	return ans;
 }
 
-
+// comparison
 bool operator==(const Complex& a, const Complex& b)
 {
 	return a.real() == b.real() && a.imag() == b.imag();
 }
-
 bool operator==(const Complex& a, double r)
 {
 	return (a.real() == r) && (a.imag() == 0);
