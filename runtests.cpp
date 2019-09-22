@@ -83,12 +83,12 @@ int main()
 	z14 = conj(z7);
 	Complex ans12(2,5);
 	Complex ans11(3,-4);
-	Assert(z13 == ans11, "Test conjugate"); //15
-	Assert(z14 == ans12, "Test conjugate"); //16
+	Assert(z13 == ans11, "Test conjugate"); //16
+	Assert(z14 == ans12, "Test conjugate"); //17
 	//Test output
-	std::cout << "Vector z13: " << z13 << std::endl; //17
-	std::cout << "Vector z5: " << z5 << std::endl; //18
-	std::cout << "Vector z11: " << z11 << std::endl; //19
+	std::cout << "Vector z13: " << z13 << std::endl; //18
+	std::cout << "Vector z5: " << z5 << std::endl; //19
+	std::cout << "Vector z11: " << z11 << std::endl; //20
 
 	return 0;
 }
