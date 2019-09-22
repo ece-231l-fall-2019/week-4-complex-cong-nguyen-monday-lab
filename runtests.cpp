@@ -38,13 +38,13 @@ int main()
 	Assert(z1 / z2 == ans4, "real constructor");
 	Assert(norm(z1) == 25, "complex norm");
 
+	//Test Comparsion ==
+	Complex z3(3,4);
+	Complex z4(6,7);
+	Assert(z3 == z4, "Test comparion ==");
+	Assert()
 
-	// TODO:
-	// Write *at least* 20 more tests to fully test
-	// your Complex class.
 
 
 	return 0;
 }
-
-
