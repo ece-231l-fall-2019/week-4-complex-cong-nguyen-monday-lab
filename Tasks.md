@@ -32,8 +32,8 @@
     8. [x] Output ( @SteelMatrix )
         - [x] operator <<
 - [x] Merge all changes in a pull request
-- [ ] Test values (Divided Work)
+- [x] Test values (Divided Work)
   - [x] Write unit tests for functions that partner worked on ( @SteelMatrix )
-  - [ ] Write unit tests for functions that partner worked on ( @cnguyen1209 )
+  - [x] Write unit tests for functions that partner worked on ( @cnguyen1209 )
   
 - [ ] Email the professor to let him know we're finished
