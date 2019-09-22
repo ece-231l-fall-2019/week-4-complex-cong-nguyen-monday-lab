@@ -56,14 +56,18 @@ Complex& Complex::operator-=(const Complex& z)
 }
 Complex& Complex::operator*=(const Complex& z)
 {
-	_real = _real*z.real() - _imag*z.imag();
-	_imag = _real*z.imag() + _imag*z.real();
+	Complex t;
+	t._real = _real*z.real() - _imag*z.imag();
+	t._imag = _real*z.imag() + _imag*z.real();
+	*this = t;
 	return *this;
 }
 Complex& Complex::operator/=(const Complex& z)
 {
-	_real = (_real*z.real() + _imag*z.imag()) / (z.real()*z.real() + z.imag()*z.imag());
-	_imag = (_imag*z.real() - _real*z.imag()) / (z.real()*z.real() + z.imag()*z.imag());
+	Complex t;
+	t._real = (_real*z.real() + _imag*z.imag()) / (z.real()*z.real() + z.imag()*z.imag());
+	t._imag = (_imag*z.real() - _real*z.imag()) / (z.real()*z.real() + z.imag()*z.imag());
+	*this = t;
 	return *this;
 }
 

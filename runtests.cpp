@@ -63,7 +63,11 @@ int main()
 	Complex ans5(9,11);
 	Complex ans6(-6,2);
 	Complex ans7(23,44);
-	Complex ans8(1.2,-0.6);
+	Complex ans8(0.2,-0.2);
+
+	Complex z25(1,1);
+	z25 *= z5;
+	std::cout << z25 << std::endl;
 	//Test Comparsion ==
 	Assert(z5 == z6, "Test comparion =="); //9
 	Assert(z7 == z9, "Test comparion =="); //10
@@ -77,6 +81,11 @@ int main()
 	ans9 = z12 / z10;
 	std::cout << ans9 << std::endl;
 	Assert(z12 / z10 == ans8, "Test basic math /"); //15
+	Complex num(6, 3);
+	Complex den(0, 5);
+	Complex ans(-0.6, 1.2);
+	std::cout << num/den << std::endl;
+	Assert(num/den == ans, "real constructor");
 	//Test conjugate
 	Complex z13, z14;
 	z13 = conj(z5);
